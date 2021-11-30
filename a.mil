@@ -1,0 +1,14 @@
+func main
+. _temp
+. i
+= i, 0
+: loop_label
+?:= loop_body, 1
+:= loop_end
+: loop_body
++ _temp, i, 1
+= i, _temp
+.> i
+:= loop_label
+: loop_end
+endfunc
